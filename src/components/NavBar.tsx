@@ -3,9 +3,9 @@ import List from "@material-ui/core/List";
 import ListItem from "@material-ui/core/ListItem";
 import ListItemIcon from "@material-ui/core/ListItemIcon";
 import ListItemText from "@material-ui/core/ListItemText";
-import InboxIcon from "@material-ui/icons/MoveToInbox";
-import MailIcon from "@material-ui/icons/Mail";
 import { useHistory } from "react-router-dom";
+import HomeIcon from '@material-ui/icons/Home';
+import ShoppingCartIcon from '@material-ui/icons/ShoppingCart';
 
 const navigationRouteMapper = {
   Hem: "/",
@@ -26,7 +26,7 @@ const NavBar = () => {
             }}
           >
             <ListItemIcon>
-              {index % 4 === 0 ? <InboxIcon /> : <MailIcon />}
+              {index % 4 === 0 ? <HomeIcon /> : <ShoppingCartIcon />}
             </ListItemIcon>
             <ListItemText primary={text} />
           </ListItem>
