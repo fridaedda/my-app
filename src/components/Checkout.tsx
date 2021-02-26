@@ -48,44 +48,44 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-const Checkout= ({ classes }) => {
+const Checkout = ({ classes }) => {
 
 
   return (
 
     <div className="Checkout">
-      
+
       <CssBaseline />
-        <Toolbar>
-          <Typography variant="h6" color="inherit" noWrap>
-            {
-              <div>
-                <Header />
-              </div>
-              }
+      <Toolbar>
+        <Typography variant="h6" color="inherit" noWrap>
+          {
+            <div>
+              <Header />
+            </div>
+          }
 
-
-          </Typography>
-          
-        </Toolbar>
-        <Typography variant="h4" align="center" style={{ marginTop: 80 }}>
-          Checkout
 
         </Typography>
-        <Typography
-          variant="subtitle2"
-          align="center"
-          style={{ marginTop: 10, marginBottom: 10 }}
-        >
-          Observera att alla rader måste vara ifyllda
+
+      </Toolbar>
+      <Typography variant="h4" align="center" style={{ marginTop: 80 }}>
+        Checkout
+
         </Typography>
-        <div>
+      <Typography
+        variant="subtitle2"
+        align="center"
+        style={{ marginTop: 10, marginBottom: 10 }}
+      >
+
+      </Typography>
+      <div>
         <Paper>
-        
+
           <StepForm />
-       
+
         </Paper>
-        </div>
+      </div>
     </div>
   )
 }

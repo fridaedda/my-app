@@ -142,7 +142,7 @@ const Header = () => {
             <MenuIcon />
           </IconButton>
           <Typography variant="h6" noWrap>
-            SKATEBOARD
+            SKATEBOARD SHOP
           </Typography>
         </Toolbar>
       </AppBar>
@@ -164,8 +164,8 @@ const Header = () => {
             {theme.direction === "ltr" ? (
               <ChevronLeftIcon />
             ) : (
-              <ChevronRightIcon />
-            )}
+                <ChevronRightIcon />
+              )}
           </IconButton>
         </div>
         <Divider />

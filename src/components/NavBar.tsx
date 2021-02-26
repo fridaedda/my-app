@@ -8,8 +8,8 @@ import MailIcon from "@material-ui/icons/Mail";
 import { useHistory } from "react-router-dom";
 
 const navigationRouteMapper = {
-  Home: "/",
-  Cart: "/cart",
+  Hem: "/",
+  Kundvagn: "/cart",
 };
 
 const NavBar = () => {
@@ -17,7 +17,7 @@ const NavBar = () => {
   return (
     <div>
       <List>
-        {["Home", "Cart"].map((text, index) => (
+        {["Hem", "Kundvagn"].map((text, index) => (
           <ListItem
             button
             key={text}

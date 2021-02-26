@@ -97,7 +97,7 @@ const Cart = () => {
         </StyledTableCell>
       </StyledTableRow>
     );
-    
+
   };
 
   return (
@@ -108,12 +108,12 @@ const Cart = () => {
         <Table className={classes.table} aria-label="customized table">
           <TableHead>
             <TableRow>
-              <StyledTableCell>Image</StyledTableCell>
-              <StyledTableCell align="right">Title</StyledTableCell>
-              <StyledTableCell align="right">Price</StyledTableCell>
-              <StyledTableCell align="right">Count</StyledTableCell>
-              <StyledTableCell align="right">Total Price</StyledTableCell>
-              <StyledTableCell align="right">operation</StyledTableCell>
+              <StyledTableCell></StyledTableCell>
+              <StyledTableCell align="right">Produkter</StyledTableCell>
+              <StyledTableCell align="right">Pris</StyledTableCell>
+              <StyledTableCell align="right">Antal</StyledTableCell>
+              <StyledTableCell align="right">Totalpris</StyledTableCell>
+              <StyledTableCell align="right"></StyledTableCell>
             </TableRow>
           </TableHead>
           <TableBody>
@@ -126,27 +126,27 @@ const Cart = () => {
                 align="right"
                 style={{ fontWeight: "bold" }}
               >
-                Total Checkout : {totalPrice}
+                Totalpris : {totalPrice} kr
               </StyledTableCell>
             </TableRow>
             <TableRow>
-            <StyledTableCell
+              <StyledTableCell
                 colSpan={5}
                 align="right"
                 style={{ fontWeight: "bold" }}
               >
-            
-              <Link to="/checkout">
-                <Button 
+
+                <Link to="/checkout">
+                  <Button
                     variant="contained"
                     color="secondary"
                     startIcon={<CloudUploadIcon />}
-                    >
-                  Checkout
+                  >
+                    Slutför köp
                 </Button>
-              </Link>
+                </Link>
 
-             </StyledTableCell>
+              </StyledTableCell>
             </TableRow>
           </TableFooter>
         </Table>

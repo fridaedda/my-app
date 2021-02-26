@@ -72,7 +72,7 @@ const PaymentMethod = ({
               <FormControlLabel
                 value="credit"
                 control={<Radio />}
-                label="Credit Card"
+                label="Betalkort"
               />
               {payment === "credit" && (
                 <CreditCard handlePaymentData={handlePaymentData} />

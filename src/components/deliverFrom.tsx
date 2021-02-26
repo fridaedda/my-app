@@ -103,16 +103,16 @@ const DeliverFrom = ({
         <Divider />
 
         <ListItem>
-          <ListItemText
+          {/* <ListItemText
             primary="phone"
             secondary={phone.length > 0 ? phone : "Not Provided"}
-          />
+          /> */}
         </ListItem>
         <Divider />
 
         <ListItem>
           <ListItemText
-            primary=" Totalpris ink moms "
+            primary=" Totalpris inkl moms "
             secondary={(totalPrice * 125) / 100 + shippingFee()}
           />
         </ListItem>
@@ -122,7 +122,7 @@ const DeliverFrom = ({
         style={{ display: "flex", marginTop: 50, justifyContent: "flex-end" }}
       >
         <Button variant="contained" color="default" onClick={handleBack}>
-          Back
+          Tillbaka
         </Button>
         <Button
           style={{ marginLeft: 20 }}

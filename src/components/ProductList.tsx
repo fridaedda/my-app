@@ -51,7 +51,7 @@ const ProductList = () => {
               </Grid>
               <Grid item xs>
                 <Typography gutterBottom variant="subtitle1">
-                  ${product.price}
+                  {product.price} kr
                 </Typography>
               </Grid>
               <Grid item xs style={{ marginBottom: 30 }}>
@@ -64,7 +64,7 @@ const ProductList = () => {
                     addCartItem(id);
                   }}
                 >
-                  Add to cart
+                  Lägg till
                 </Button>
               </Grid>
             </Grid>

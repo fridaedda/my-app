@@ -31,7 +31,7 @@ const AddressForm = ({
     phone.length > 0 &&
     email.length > 0 &&
     shipping.length > 0;
-    
+
   const { state } = useContext(CartContext);
   let totalPrice = 0;
   let product;
@@ -188,11 +188,11 @@ const AddressForm = ({
                 <InputLabel htmlFor="shipping">Leveranssätt</InputLabel>
                 <Select value={shipping} onChange={handleChange("shipping")}>
                   <MenuItem value={"PostNord"}>
-                    PostNord 20kr , 7 dager
+                    PostNord 20 kr , 7 dagar
                   </MenuItem>
-                  <MenuItem value={"DHL"}>DHL 100 kr, 4 dager</MenuItem>
+                  <MenuItem value={"DHL"}>DHL 100 kr, 4 dagar</MenuItem>
                   <MenuItem value={"Schenker"}>
-                    Schenker 200kr , 2 dager
+                    Schenker 200 kr , 2 dagar
                   </MenuItem>
                 </Select>
               </FormControl>

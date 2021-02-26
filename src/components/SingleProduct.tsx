@@ -8,7 +8,7 @@ import { useParams } from "react-router-dom";
 import CartContext from "../context/cartContext";
 
 const SingleProduct = () => {
-  let { id } = useParams();
+  let id = useParams();
   const product = products.find((product) => product.id === id);
 
   const { addCartItem } = useContext(CartContext);
@@ -60,13 +60,13 @@ const SingleProduct = () => {
                     addCartItem(id);
                   }}
                 >
-                  Add to cart
+                  Lägg till
                 </Button>
               </Grid>
             </>
           ) : (
-            <h2>This product does not exist....</h2>
-          )}
+              <h2>This product does not exist....</h2>
+            )}
         </Grid>
       </Grid>
     </div>
