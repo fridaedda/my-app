@@ -8,7 +8,7 @@ import { useParams } from "react-router-dom";
 import CartContext from "../context/cartContext";
 
 const SingleProduct = () => {
-  let id = useParams();
+  let { id } = useParams();
   const product = products.find((product) => product.id === id);
 
   const { addCartItem } = useContext(CartContext);
