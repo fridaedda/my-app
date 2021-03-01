@@ -6,15 +6,7 @@ interface creditCardInterface {
 }
 
 export class creditCard extends Component<creditCardInterface> {
-  // handleChange=(  e: React.ChangeEvent<HTMLInputElement>)=> {
-  //     const { name, value } = e.currentTarget;
-  //     this.setState({
 
-  //          ...this.state,
-  //          [ name]: value
-
-  //       }, ()=>{console.log(this.state)});
-  // };
   render() {
     return (
       <div>
@@ -24,7 +16,7 @@ export class creditCard extends Component<creditCardInterface> {
             type="text"
             onChange={this.props.handlePaymentData("cardHolder")}
             inputProps={{
-              minlength: 3,
+              minLength: 3,
               required: true,
             }}
           />
@@ -34,8 +26,8 @@ export class creditCard extends Component<creditCardInterface> {
             onChange={this.props.handlePaymentData("cardNumber")}
             inputProps={{
               required: true,
-              minlength: 16,
-              maxlength: 16,
+              minLength: 16,
+              maxLength: 16,
             }}
           />
           <TextField
@@ -52,8 +44,8 @@ export class creditCard extends Component<creditCardInterface> {
             defaultValue="000"
             onChange={this.props.handlePaymentData("cvv")}
             inputProps={{
-              minlength: 3,
-              maxlength: 3,
+              minLength: 3,
+              maxLength: 3,
               required: true,
             }}
           />

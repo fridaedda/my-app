@@ -32,6 +32,8 @@ Yup: https://www.npmjs.com/package/@types/yup
 
 Körinstruktioner
 
+Gå in i rätt directory där du har filen så du står på \my-app.
+Sedan kör du npm install.
 När ovanstående är installerat i programmet körs appen i gång genom att skriva npm start i terminalen.
 
 

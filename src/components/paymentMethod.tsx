@@ -89,8 +89,8 @@ const PaymentMethod = ({
                   placeholder="Ditt telefonnummer"
                   onChange={handlePaymentData("swish")}
                   inputProps={{
-                    minlength: 10,
-                    maxlength: 10,
+                    minLength: 10,
+                    maxLength: 10,
                   }}
                 />
               )}
@@ -106,8 +106,8 @@ const PaymentMethod = ({
                   placeholder="E-post"
                   onChange={handlePaymentData("paypalEPost")}
                   inputProps={{
-                    minlength: 10,
-                    maxlength: 10,
+                    minLength: 10,
+                    maxLength: 10,
                   }}
                 />
               )}

@@ -26,7 +26,6 @@ const DeliverFrom = ({
   let totalPrice = 0;
   let product;
   state.map((cartItem) => {
-    console.log(cartItem);
     product = products.find((product) => {
       if (product.id === cartItem.id) {
         totalPrice += product.price * cartItem.count;
