@@ -11,3 +11,43 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+
+@media only screen and (max-width: 400px) {
+  .productlist {
+    width: 300px;
+    margin-left: -100px;
+  }
+  .image {
+    width: 260px;
+    margin-left: -40px;
+  }
+ 
+  .productsingle {
+    width: 300px;
+    margin-left: 40px;
+  }
+
+  .productdetails {
+    margin-left: 200px;
+  }
+
+  .cartcontainer {
+    width: 350px;
+  }
+
+  .table-head {
+    width: 410px;
+  }
+
+  .inputfield {
+    width: 30px;
+  }
+
+  .checkoutlist {
+    width: 370px;
+    margin-left: -100px; 
+    padding-left: 0px;
+}
+
+}

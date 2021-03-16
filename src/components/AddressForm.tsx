@@ -197,7 +197,8 @@ const AddressForm = ({
                 </Select>
               </FormControl>
             </Grid>
-            <List disablePadding>
+            <div className="checkoutlist"> 
+            <List disablePadding> 
               <ListItem>
                 <ListItemText primary="Leverans:" secondary={deliveryAt()} />
                 <ListItemText primary="Frakt:" secondary={shippingFee()} />
@@ -209,6 +210,7 @@ const AddressForm = ({
                 {/* Total Checkout : {totalPrice} */}
               </ListItem>
             </List>
+            </div>
           </Grid>
         </Grid>
         <div

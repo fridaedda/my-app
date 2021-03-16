@@ -16,6 +16,8 @@ const ProductList = () => {
   const { addCartItem } = useContext(CartContext);
   const history = useHistory();
   return (
+
+    <div className="productlist">
     <div>
       {products.map((product) => {
         return (
@@ -23,7 +25,7 @@ const ProductList = () => {
             <Grid style={{ padding: 50 }}>
               <Grid container spacing={2} style={{ marginBottom: 30 }}>
                 <Grid item>
-                  <img
+                  <img className="image"
                     style={{ height: 400, cursor: "pointer" }}
                     src={product.image}
                     alt={product.title}
@@ -71,6 +73,7 @@ const ProductList = () => {
           </Paper>
         );
       })}
+    </div>
     </div>
   );
 };

@@ -14,8 +14,10 @@ const SingleProduct = () => {
   const { addCartItem } = useContext(CartContext);
 
   return (
+  <div className="productsingle">
     <div>
       <Header />
+      
       <Grid>
         <Grid
           style={{
@@ -27,7 +29,9 @@ const SingleProduct = () => {
         >
           {product ? (
             <>
+            
               <Grid container spacing={2} style={{ marginBottom: 30 }}>
+                
                 <Grid item>
                   <img
                     style={{ height: 550, cursor: "pointer" }}
@@ -35,7 +39,7 @@ const SingleProduct = () => {
                     alt={product.title}
                   />
                 </Grid>
-              </Grid>
+              </Grid><div className="productdetails">
               <Grid item xs={12} sm container>
                 <Typography
                   gutterBottom
@@ -45,6 +49,7 @@ const SingleProduct = () => {
                   {product.title}
                 </Typography>
               </Grid>
+              
               <Grid item xs>
                 <Typography gutterBottom variant="subtitle1">
                   ${product.price}
@@ -63,13 +68,17 @@ const SingleProduct = () => {
                   Lägg till
                 </Button>
               </Grid>
+              </div> 
             </>
           ) : (
               <h2>This product does not exist....</h2>
             )}
         </Grid>
       </Grid>
+      
     </div>
+  </div> 
+
   );
 };
 

@@ -41,9 +41,13 @@ const StyledTableRow = withStyles((theme) => ({
 
 const useStyles = makeStyles({
   table: {
-    maxWidth: 900,
+    width: 300,
     margin: "80px auto",
-  },
+ 
+  
+  },  
+   
+  
 });
 
 const Cart = () => {
@@ -61,18 +65,27 @@ const Cart = () => {
     });
     totalPrice += product.price * count;
     return (
+
+      <div className="table-head">
+
       <StyledTableRow key={product.name}>
-        <StyledTableCell component="th" scope="row">
+
+      <StyledTableCell component="th" scope="row">
+      {/* 
           <img
             src={product.image}
             style={{ height: 80 }}
             alt={product.image}
-          ></img>
+      ></img>*/}
         </StyledTableCell>
+        
         <StyledTableCell align="right">{product.title}</StyledTableCell>
         <StyledTableCell align="right">{product.price}</StyledTableCell>
-        <StyledTableCell align="right">
-          <input
+        <StyledTableCell className="inputfield" align="right">      
+        
+          <div className="inputfield"> 
+
+          <input className="inputfield"
             type="number"
             // defaultValue={count}
             value={count}
@@ -84,6 +97,10 @@ const Cart = () => {
                 : updateCartItem({ id, count: 1 });
             }}
           />
+          
+          </div>
+
+
         </StyledTableCell>
         <StyledTableCell align="right">{count * product.price}</StyledTableCell>
         <StyledTableCell align="right">
@@ -96,61 +113,71 @@ const Cart = () => {
           </IconButton>
         </StyledTableCell>
       </StyledTableRow>
+</div> 
     );
 
-  };
+  }; 
 
-  return (
-    <div>
+  return ( 
+    <div> 
       <Header />
-
       <TableContainer component={Paper}>
-        <Table className={classes.table} aria-label="customized table">
-          <TableHead>
-            <TableRow>
-              <StyledTableCell></StyledTableCell>
-              <StyledTableCell align="right">Produkter</StyledTableCell>
-              <StyledTableCell align="right">Pris</StyledTableCell>
-              <StyledTableCell align="right">Antal</StyledTableCell>
-              <StyledTableCell align="right">Totalpris</StyledTableCell>
-              <StyledTableCell align="right"></StyledTableCell>
-            </TableRow>
-          </TableHead>
-          <TableBody>
-            {state.map((row) => Product(row.id, row.count))}
-          </TableBody>
-          <TableFooter>
-            <TableRow>
-              <StyledTableCell
-                colSpan={5}
-                align="right"
-                style={{ fontWeight: "bold" }}
-              >
-                Totalpris : {totalPrice} kr
-              </StyledTableCell>
-            </TableRow>
-            <TableRow>
-              <StyledTableCell
-                colSpan={5}
-                align="right"
-                style={{ fontWeight: "bold" }}
-              >
+        <Table className={classes.table} aria-label="customized table">        
+         <div>
+                    <div>
+                      <TableHead> 
+                        <TableRow> 
+                          <StyledTableCell style={{width: '20%'}} align="right">Produkter</StyledTableCell>
+                          <StyledTableCell style={{width: '20%'}} align="right">Pris</StyledTableCell>
+                          <StyledTableCell style={{width: '40%'}} align="right">Antal</StyledTableCell>
+                          <StyledTableCell align="right">Totalpris</StyledTableCell>
+                          <StyledTableCell align="right"></StyledTableCell>
+                        </TableRow>
+                      </TableHead>
+                    </div>
+                  <div>
+                    <TableBody>  
+                      {state.map((row) => Product(row.id, row.count))}
+                    </TableBody>
+                  </div>         
 
-                <Link to="/checkout">
-                  <Button
-                    variant="contained"
-                    color="secondary"
-                    startIcon={<CloudUploadIcon />}
-                  >
-                    Slutför köp
-                </Button>
-                </Link>
+              <TableFooter>
+                
+              <TableRow>
+                <StyledTableCell
+                  colSpan={5}
+                  align="right"
+                  style={{ fontWeight: "bold" }}
+                >
+                  Totalpris : {totalPrice} kr
+                </StyledTableCell>
+              </TableRow>
 
-              </StyledTableCell>
-            </TableRow>
-          </TableFooter>
-        </Table>
-      </TableContainer>
+              <TableRow>
+                <StyledTableCell
+                  colSpan={5}
+                  align="right"
+                  style={{ fontWeight: "bold" }}
+                >
+
+                  <Link to="/checkout">
+                    <Button
+                      variant="contained"
+                      color="secondary"
+                      startIcon={<CloudUploadIcon />}
+                    >
+                      Slutför köp
+                  </Button>
+                  </Link>
+
+                </StyledTableCell>
+              </TableRow>
+              </TableFooter>
+          </div>
+
+          </Table>
+        
+          </TableContainer>
     </div>
   );
 };
