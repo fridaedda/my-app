@@ -11,7 +11,7 @@ export const products: product[] = [
     id: "1",
     name: "Skateboard - 9.6 Big Plant Team",
     title: "Skateboard - 8.6 Big Plant Team",
-    price: 1999,
+    price: 299,
     image: require('./images/8.6_big_plant.jpeg')
   },
   {
@@ -25,21 +25,21 @@ export const products: product[] = [
     id: "3",
     name: "Skateboard - 7.75 Double Pipe",
     title: "Skateboard - 7.75 Double Pipe",
-    price: 1199,
+    price: 400,
     image: require('./images/skateboard_2.jpeg')
   },
   {
     id: "4",
     name: "Skateboard - 5 Stein",
     title: "Skateboard - 5 Stein",
-    price: 2900,
+    price: 500,
     image: require('./images/skateboard_3.jpeg')
   },
   {
     id: "5",
     name: "Skateboard - 8.6 Stein",
     title: "Skateboard - 8.6 Stein",
-    price: 2900,
+    price: 290,
     image: require('./images/skateboard_4.jpeg')
   },
   {

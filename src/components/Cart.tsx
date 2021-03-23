@@ -66,25 +66,25 @@ const Cart = () => {
     totalPrice += product.price * count;
     return (
 
-      <div className="table-head">
+<div className="table-head">
 
       <StyledTableRow key={product.name}>
 
-      <StyledTableCell component="th" scope="row">
-      {/* 
+      <StyledTableCell style={{width: '8%'}} component="th" scope="row">
+      
           <img
             src={product.image}
             style={{ height: 80 }}
             alt={product.image}
-      ></img>*/}
+      ></img>
+
+      <StyledTableCell align="left">{product.title}</StyledTableCell>
+      
         </StyledTableCell>
         
-        <StyledTableCell align="right">{product.title}</StyledTableCell>
-        <StyledTableCell align="right">{product.price}</StyledTableCell>
-        <StyledTableCell className="inputfield" align="right">      
         
-          <div className="inputfield"> 
-
+        
+        <StyledTableCell style={{width: '8%'}} className="inputfield" align="right">      
           <input className="inputfield"
             type="number"
             // defaultValue={count}
@@ -97,13 +97,13 @@ const Cart = () => {
                 : updateCartItem({ id, count: 1 });
             }}
           />
-          
-          </div>
-
-
+        
+        <StyledTableCell  className="inputfield" style={{width: '1%'}} align="left">{product.price}</StyledTableCell>
         </StyledTableCell>
-        <StyledTableCell align="right">{count * product.price}</StyledTableCell>
-        <StyledTableCell align="right">
+
+        <StyledTableCell style={{width: '10%'}} align="right">{count * product.price}</StyledTableCell>
+
+        <StyledTableCell style={{width: '10%'}} align="right">
           <IconButton
             onClick={() => {
               removeCartItem(id);
@@ -112,6 +112,8 @@ const Cart = () => {
             <DeleteIcon />
           </IconButton>
         </StyledTableCell>
+
+
       </StyledTableRow>
 </div> 
     );
@@ -127,11 +129,12 @@ const Cart = () => {
                     <div>
                       <TableHead> 
                         <TableRow> 
-                          <StyledTableCell style={{width: '20%'}} align="right">Produkter</StyledTableCell>
-                          <StyledTableCell style={{width: '20%'}} align="right">Pris</StyledTableCell>
-                          <StyledTableCell style={{width: '40%'}} align="right">Antal</StyledTableCell>
-                          <StyledTableCell align="right">Totalpris</StyledTableCell>
-                          <StyledTableCell align="right"></StyledTableCell>
+                          <StyledTableCell style={{width: '10%'}} align="left">Produkter</StyledTableCell>
+                          <StyledTableCell style={{width: '10%'}} align="left"></StyledTableCell>
+                          <StyledTableCell style={{width: '40%'}} align="left">Antal och pris</StyledTableCell>
+                          <StyledTableCell style={{width: '10%'}} align="left"></StyledTableCell>
+                          <StyledTableCell style={{width: '5%'}} align="left">Totalpris</StyledTableCell>
+                          <StyledTableCell style={{width: '10%'}} align="left">Ta bort</StyledTableCell>
                         </TableRow>
                       </TableHead>
                     </div>
@@ -169,6 +172,7 @@ const Cart = () => {
                       Slutför köp
                   </Button>
                   </Link>
+                  
 
                 </StyledTableCell>
               </TableRow>
