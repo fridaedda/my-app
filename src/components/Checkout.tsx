@@ -12,7 +12,9 @@ import StepForm from "./StepForm"
 import Header from "./Header"
 
 const useStyles = makeStyles((theme) => ({
- 
+  appBar: {
+    position: "relative",
+  },
   layout: {
     width: "auto",
     marginLeft: theme.spacing(2),
