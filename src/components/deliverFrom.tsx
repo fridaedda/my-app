@@ -32,6 +32,7 @@ const DeliverFrom = ({
       }
     });
   });
+  
   const shippingFee = () => {
     switch (shipping) {
       case "PostNord":

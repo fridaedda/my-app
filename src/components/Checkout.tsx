@@ -3,11 +3,9 @@ import PropTypes from "prop-types"
 import withStyles from "@material-ui/core/styles/withStyles"
 import CssBaseline from "@material-ui/core/CssBaseline"
 import { makeStyles } from "@material-ui/core/styles";
-//import AppBar from "@material-ui/core/AppBar"
 import Toolbar from "@material-ui/core/Toolbar"
 import Paper from "@material-ui/core/Paper"
 import Typography from "@material-ui/core/Typography"
-//import Divider from "@material-ui/core/Divider"
 import StepForm from "./StepForm"
 import Header from "./Header"
 
@@ -63,27 +61,20 @@ const Checkout = ({ classes }) => {
               <Header />
             </div>
           }
-
-
         </Typography>
-
       </Toolbar>
       <Typography variant="h4" align="center" style={{ marginTop: 80 }}>
         Checkout
-
         </Typography>
       <Typography
         variant="subtitle2"
         align="center"
         style={{ marginTop: 10, marginBottom: 10 }}
       >
-
       </Typography>
       <div>
         <Paper>
-
           <StepForm />
-
         </Paper>
       </div>
     </div>

@@ -3,8 +3,6 @@ import { CartProvider } from "../context/cartContext";
 import { DrawerProvider } from "../context/drawerContext";
 import Router from "./router";
 
-// const [Provider] = useContext(CartContext);
-
 function App() {
   return (
     <DrawerProvider>

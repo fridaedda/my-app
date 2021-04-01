@@ -13,8 +13,6 @@ import List from "@material-ui/core/List";
 import ListItem from "@material-ui/core/ListItem";
 import ListItemText from "@material-ui/core/ListItemText";
 
-// Destructure props
-// const FirstStep
 const AddressForm = ({
   handleNext,
   handleChange,
@@ -56,6 +54,7 @@ const AddressForm = ({
         return "Not Defined";
     }
   };
+
   const shippingFee = () => {
     switch (shipping) {
       case "PostNord":
@@ -68,6 +67,7 @@ const AddressForm = ({
         return "Not Defined";
     }
   };
+  
   return (
     <div style={{ padding: 100, marginTop: 10, marginBottom: 10 }}>
       <Fragment>

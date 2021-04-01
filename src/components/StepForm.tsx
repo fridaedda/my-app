@@ -6,13 +6,10 @@ import AddressForm from "./AddressForm";
 import PaymentMethod from "./paymentMethod";
 import DeliverFrom from "./deliverFrom";
 import Success from "./Success";
-//import Header from "./Header";
-import creditCard from "./payments/creditCard";
 
 const emailRegex = RegExp(/^[^@]+@[^@]+\.[^@]+$/);
 const phoneRegex = RegExp(/^\D?(\d{3})\D?\D?(\d{3})\D?(\d{4,6})$/);
 const zipRegex = RegExp(/^\D?(\d{3})\D?\D?(\d{0})\D?(\d{2})$/);
-
 const labels = ["Adressuppgifter", "Betalning", "Bekräftelse"];
 
 const StepForm = () => {
@@ -79,33 +76,7 @@ const StepForm = () => {
       case "phone":
         formErrors.phone = phoneRegex.test(value) ? "" : "Ogiltlig telefonnr. ";
         break;
-      // case "cardNumber":
-      //   formErrors.swish = lengthValidate ? "Minst två bokstäver" : "";
-      //   break;
-      // break;
-      // case "credit":
-      //   formErrors.credit = lengthValidate
-      //     ? "Minst två bokstäver"
-      //     : "";
-      // break;
-      // case "swish":
-      //   formErrors.swish = lengthValidate
-      //     ? "Minst två bokstäver"
-      //     : "";
-      // break;
-      // case "paypal":
-      //   formErrors.paypal = lengthValidate
-      //     ? "Minst två bokstäver"
-      //     : "";
-      // break;
-      // case "cardNumber":
-      //   formErrors.cardNumber = lengthValidate
-      //     ? "Minst två bokstäver"
-      //     : "";
-      // break;
-
-      //selected, credit, swish, paypal, cardNumber, cvv
-
+     
       default:
         break;
     }
@@ -179,4 +150,5 @@ const StepForm = () => {
     </Fragment>
   );
 };
+
 export default StepForm;

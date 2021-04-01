@@ -17,9 +17,7 @@ import Paper from "@material-ui/core/Paper";
 import IconButton from "@material-ui/core/IconButton";
 import DeleteIcon from "@material-ui/icons/Delete";
 import { products } from "../products";
-import { pathToFileURL } from "url";
 import { useHistory, Link } from "react-router-dom";
-
 
 const StyledTableCell = withStyles((theme) => ({
   head: {
@@ -38,22 +36,16 @@ const StyledTableRow = withStyles((theme) => ({
     },
   },
 }))(TableRow);
-
 const useStyles = makeStyles({
   table: {
     width: 300,
     margin: "80px auto",
- 
-  
   },  
-   
-  
 });
 
 const Cart = () => {
   const history = useHistory();
   const { updateCartItem, removeCartItem, state } = useContext(CartContext);
-
   const classes = useStyles();
 
   let totalPrice = 0;
@@ -69,25 +61,17 @@ const Cart = () => {
 <div className="table-head">
 
       <StyledTableRow key={product.name}>
-
-      <StyledTableCell style={{width: '8%'}} component="th" scope="row">
-      
+      <StyledTableCell style={{width: '8%'}} component="th" scope="row">      
           <img
             src={product.image}
             style={{ height: 80 }}
             alt={product.image}
-      ></img>
-
-      <StyledTableCell align="left">{product.title}</StyledTableCell>
-      
-        </StyledTableCell>
-        
-        
-        
+          ></img>
+      <StyledTableCell align="left">{product.title}</StyledTableCell>     
+        </StyledTableCell>        
         <StyledTableCell style={{width: '8%'}} className="inputfield" align="right">      
           <input className="inputfield"
             type="number"
-            // defaultValue={count}
             value={count}
             onChange={(e) => {
               let id = product.id;
@@ -100,7 +84,6 @@ const Cart = () => {
         
         <StyledTableCell  className="inputfield" style={{width: '1%'}} align="left">{product.price}</StyledTableCell>
         </StyledTableCell>
-
         <StyledTableCell style={{width: '10%'}} align="right">{count * product.price}</StyledTableCell>
 
         <StyledTableCell style={{width: '10%'}} align="right">
@@ -112,12 +95,9 @@ const Cart = () => {
             <DeleteIcon />
           </IconButton>
         </StyledTableCell>
-
-
       </StyledTableRow>
 </div> 
     );
-
   }; 
 
   return ( 
@@ -172,15 +152,11 @@ const Cart = () => {
                       Slutför köp
                   </Button>
                   </Link>
-                  
-
                 </StyledTableCell>
               </TableRow>
               </TableFooter>
           </div>
-
-          </Table>
-        
+          </Table>    
           </TableContainer>
     </div>
   );
