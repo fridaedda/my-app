@@ -1,6 +1,6 @@
 <h1>Skateboard Shop</h1>
 
-Av: Nawar Mohra, Amir Shishengari, Frida Baldvinsdottir, Humayun Bayani, Bara Abdullatif<br>
+Av: Nawar Mohra, Amir Shishengari, Frida Baldvinsdottir, Humayun Bayani, Bara Abdullatif, Lucas Persson<br>
 Systemutveckling Ramverk, 25 yhp<br>
 Wie19, Medieinstitutet<br>
 
