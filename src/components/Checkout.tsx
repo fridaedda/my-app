@@ -1,15 +1,12 @@
 import React from "react"
-import PropTypes from "prop-types"
-import withStyles from "@material-ui/core/styles/withStyles"
 import CssBaseline from "@material-ui/core/CssBaseline"
-import { makeStyles } from "@material-ui/core/styles";
 import Toolbar from "@material-ui/core/Toolbar"
 import Paper from "@material-ui/core/Paper"
 import Typography from "@material-ui/core/Typography"
 import StepForm from "./StepForm"
 import Header from "./Header"
 
-const useStyles = makeStyles((theme) => ({
+/* const useStyles = makeStyles((theme) => ({
   appBar: {
     position: "relative",
   },
@@ -45,7 +42,7 @@ const useStyles = makeStyles((theme) => ({
     marginLeft: theme.spacing(1),
   },
 }));
-
+ */
 const Checkout = ({ classes }) => {
 
 
