@@ -1,20 +1,33 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Roboto", "Oxygen", "Ubuntu",
+    "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
 
-@media only screen and (max-width: 600px) {
+.MuiTable-root {
+  width: 100%;
+  border-spacing: 0;
+  border-collapse: collapse;
+  display: flex;
+  justify-content: center;
+}
+
+.image {
+  width: 400px;
+  height: 435px;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 320px), screen and (max-height: 568px) {
   .productlist {
     width: 300px;
-    margin-left: -100px;
+    margin-left: -105px;
   }
   .image {
     width: 260px;
@@ -38,7 +51,130 @@ code {
   }
   .checkoutlist {
     width: 370px;
-    margin-left: -100px; 
+    margin-left: -100px;
     padding-left: 0px;
   }
 }
+
+@media screen and (width: 375px), screen and (height: 667px) {
+  .productlist {
+    width: 300px;
+    margin-left: -95px;
+  }
+  .image {
+    width: 260px;
+    margin-left: -40px;
+  }
+  .productsingle {
+    width: 300px;
+    margin-left: 40px;
+  }
+  .productdetails {
+    margin-left: 200px;
+  }
+  .cartcontainer {
+    width: 350px;
+  }
+  .table-head {
+    width: 370px;
+  }
+  .inputfield {
+    width: 30px;
+  }
+  .checkoutlist {
+    width: 370px;
+    margin-left: -100px;
+    padding-left: 0px;
+  }
+}
+
+@media screen and (width: 414px), screen and (height: 736px) {
+  .productlist {
+    width: 350px;
+    margin-left: -105px;
+  }
+
+  .image {
+    width: 260px;
+    margin-left: -30px;
+    height: 240px;
+  }
+  .productsingle {
+    width: 300px;
+    margin-left: 40px;
+  }
+  .productdetails {
+    margin-left: 200px;
+  }
+  .cartcontainer {
+    width: 350px;
+  }
+  .table-head {
+    width: 370px;
+  }
+  .inputfield {
+    width: 30px;
+  }
+  .checkoutlist {
+    width: 370px;
+    margin-left: -100px;
+    padding-left: 0px;
+  }
+}
+
+/* @media screen and (max-width: 768px), 
+       screen and (max-height: 1024px)  {
+  .MuiPaper-root {
+    width: 500px;
+    margin-left: -125px;
+    height: auto;
+  }
+
+  .image {
+    width: 260px;
+    margin-left: -30px;
+    height: 240px;
+  }
+  .productsingle {
+    width: 300px;
+    margin-left: 40px;
+  }
+  .productdetails {
+    margin-left: 200px;
+  }
+  .cartcontainer {
+    width: 350px;
+  }
+  .table-head {
+    width: 370px;
+  }
+  .inputfield {
+    width: 30px;
+  }
+  .checkoutlist {
+    width: 370px;
+    margin-left: -100px; 
+    padding-left: 0px;
+  }
+  
+} */
+
+/* @media screen and (max-width: 1024px), 
+       screen and (max-height: 1366px)  {
+  .MuiPaper-root {
+    width: 500px;
+    margin-left: -90px;
+    height: auto;
+  }
+  
+} */
+
+/* @media screen and (max-width: 540px), 
+       screen and (max-height: 720px)  {
+  .MuiPaper-root {
+    width: 500px;
+    margin-left: -165px;
+    height: auto;
+  }
+  
+} */
