@@ -21,7 +21,7 @@ const ProductList = () => {
     <div>
       {products.map((product) => {
         return (
-          <Paper elevation={3}>
+          <Paper elevation={3} style={{ marginBottom: 30 }}>
             <Grid style={{ padding: 50 }}>
               <Grid container spacing={2} style={{ marginBottom: 30 }}>
                 <Grid item>

@@ -33,8 +33,8 @@ const SingleProduct = () => {
               <Grid container spacing={2} style={{ marginBottom: 30 }}>
                 
                 <Grid item>
-                  <img
-                    style={{ height: 550, cursor: "pointer" }}
+                  <img className="singleImage"
+                   
                     src={product.image}
                     alt={product.title}
                   />

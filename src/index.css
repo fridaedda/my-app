@@ -24,6 +24,11 @@ code {
   margin: 0 auto;
 }
 
+.singleImage{
+  width: 550px;
+  cursor: pointer;
+}
+
 @media screen and (max-width: 320px), screen and (max-height: 568px) {
   .productlist {
     width: 300px;
@@ -33,12 +38,21 @@ code {
     width: 260px;
     margin-left: -40px;
   }
+
+  .singleImage{
+    width: 280px;
+    cursor: pointer;
+    margin-left: -40px;
+  }
   .productsingle {
     width: 300px;
     margin-left: 40px;
   }
   .productdetails {
-    margin-left: 200px;
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+    width: 200px;
   }
   .cartcontainer {
     width: 350px;
@@ -65,12 +79,22 @@ code {
     width: 260px;
     margin-left: -40px;
   }
+
+  .singleImage{
+    width: 350px;
+    cursor: pointer;
+    margin-left: 0px;
+  }
+
   .productsingle {
     width: 300px;
     margin-left: 40px;
   }
   .productdetails {
-    margin-left: 200px;
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+    width: 200px;
   }
   .cartcontainer {
     width: 350px;
@@ -99,8 +123,15 @@ code {
     margin-left: -30px;
     height: 240px;
   }
+
+  .singleImage{
+    width: 400px;
+    cursor: pointer;
+    margin-left: 140px;
+  }
+  
   .productsingle {
-    width: 300px;
+    width: 200px;
     margin-left: 40px;
   }
   .productdetails {
