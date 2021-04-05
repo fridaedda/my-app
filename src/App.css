@@ -13,12 +13,7 @@
   }
 }
 
-@media only screen and (max-width: 600px) {
-  .productlist {
-    width: 300px;
-    margin-left: 0px;
-  }
-}
+
 
 .App-header {
   background-color: #282c34;
